@@ -1,34 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+
 body {
-  text-align: center;
-  background: rgb(50, 50, 50);
-  overflow: hidden;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-  color: #ccc;
+    text-align: center;
+    background: rgb(50, 50, 50);
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    color: #ccc;
 }
 
 #loading {
-  margin-top: calc(50vh - 21px);
-  font-size: 42px;
+    margin-top: calc(50vh - 21px);
+    font-size: 42px;
 }
 
 #background {
-  position: absolute;
-  object-fit: cover;
-  left: -20px;
-  top: -20px;
-  width: calc(100vw + 40px);
-  height: calc(100vh + 40px);
-  -webkit-filter: blur(20px) brightness(35%);
-  overflow: hidden;
+    position: absolute;
+    object-fit: cover;
+    left: -20px;
+    top: -20px;
+    width: calc(100vw + 40px);
+    height: calc(100vh + 40px);
+    -webkit-filter: blur(20px) brightness(35%);
+    overflow: hidden;
 }
 
 #cover {
-  position: absolute;
-  left: calc(50vw - 320px);
-  top: calc(50vh - 320px);
+    position: absolute;
+    left: calc(50vw - 680px);
+    top: calc(50vh - 320px);
 }
 
-* {
-  cursor: none;
+.songdetails {
+    position: absolute;
+    left: calc(50vw);
+    top: calc(50vh - 320px);
+    z-index: 1000;
+    word-break: break-all;
+    width: 100% - 680px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+#songname {
+    color: #fff;
+    font-size: 72px;
+    text-shadow: 2px 2px 8px rgba(190, 190, 190, 0.4);
+    margin-bottom: 10px;
+}
+
+#artist {
+    color: #fff;
+    font-size: 58px;
+    text-shadow: 2px 2px 8px rgba(190, 190, 190, 0.4);
+    margin-top: 0;
+}
+
+.addeduser {
+    color: #fff;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px rgba(190, 190, 190, 0.4);
 }
